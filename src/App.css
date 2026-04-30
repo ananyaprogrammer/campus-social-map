@@ -1,0 +1,25 @@
+/* Global reset-ish */
+* {
+  box-sizing: border-box;
+}
+
+/* Dark gradient background for full app */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter",
+    "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top left, #020617, #020617, #000);
+  color: #e5e7eb;
+}
+
+/* Root wrapper */
+.app-root {
+  min-height: 100vh;
+}
+
+/* Main content wrapper */
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem 2.5rem;
+}

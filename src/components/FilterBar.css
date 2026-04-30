@@ -1,0 +1,106 @@
+/* MAIN WRAPPER */
+.filter-container {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* SELECT DROPDOWN */
+.filter-select-wrapper {
+  position: relative;
+}
+
+.filter-select {
+  padding: 0.55rem 0.85rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  background: rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  color: #f1f5f9;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.filter-select:hover {
+  border-color: #818cf8;
+  background: rgba(79, 70, 229, 0.18);
+}
+
+.filter-select:focus {
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.4);
+}
+
+/* SEARCH BOX */
+.filter-input-wrapper {
+  flex: 1;
+  min-width: 220px;
+}
+.filter-input {
+  width: 100%;
+  padding: 0.55rem 0.85rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  background: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  color: #f1f5f9;
+  font-size: 0.9rem;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+
+.filter-input::placeholder {
+  color: #cbd5e1;
+}
+
+.filter-input:hover {
+  border-color: #818cf8;
+  background: rgba(79, 70, 229, 0.17);
+}
+
+.filter-input:focus {
+  border-color: #a5b4fc;
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.35);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* ===== LIGHT THEME OVERRIDES FOR FILTER BAR ===== */
+
+body.theme-light .filter-select {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: #d1d5db;
+}
+
+body.theme-light .filter-input {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: #d1d5db;
+}
+
+body.theme-light .filter-input::placeholder {
+  color: #9ca3af;
+}
+/* Dropdown list option styling */
+.filter-select option {
+  background-color: #020617;   /* dark dropdown */
+  color: #e5e7eb;
+}
+
+/* Light theme dropdown */
+body.theme-light .filter-select option {
+  background-color: #ffffff;
+  color: #111827;
+}
